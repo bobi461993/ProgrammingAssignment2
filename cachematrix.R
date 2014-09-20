@@ -21,9 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Function which sees if a matrix has calculated its inverse
-## If it has, it returns its inverse immediatly, otherwise, it calculates the inverse
-## and sets it with the help of the first function
-
+## If it has, it returns its inverse immediatly with the getInverse function from above,
+## otherwise, it calculates the inverse and sets it with the help of the setInverse function
+ 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         inv <- x$getInverse()
